@@ -1,0 +1,52 @@
+<ol class="breadcrumb">
+    <li><a href="/">Home</a></li>
+    <li class="active">Add Student</a></li>
+</ol>
+
+<br/>
+<%- partial ('partials/statusmessage.ejs') %>
+
+<h2>Add Student</h2>
+<form action="/create" method="POST" class="form-horizontal" id="addStudentForm">
+  <div class="form-group">
+    <label for="first_name" class="col-sm-2 control-label">First Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="last_name" class="col-sm-2 control-label">Last Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="last_name" name="last_name"  placeholder="Last Name" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="start_date" class="col-sm-2 control-label">Start Date</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="start_date" name="start_date" placeholder="2017-01-01" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="gpa" class="col-sm-2 control-label">GPA</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="gpa" name="gpa" placeholder="4.0">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="sat" class="col-sm-2 control-label">SAT Score</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="sat" name="sat" placeholder="1400">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="major_id" class="col-sm-2 control-label">Major ID</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="major_id" name="major_id">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Add Student</button>
+    </div>
+  </div>
+</form>
